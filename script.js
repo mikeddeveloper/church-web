@@ -12,8 +12,10 @@ function filterAudio() {
     });
 }
 
-// Toggle dark mode functionality
-const modeToggleButton = document.getElementById('mode-toggle');
-modeToggleButton.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
+// Toggle navbar visibility
+const navbarToggle = document.getElementById('navbar-toggle');
+const navbarMenu = document.getElementById('navbar-menu');
+
+navbarToggle.addEventListener('click', () => {
+    navbarMenu.classList.toggle('active');
 });
