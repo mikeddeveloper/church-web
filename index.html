@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Church Audio Download</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <h1>Church Audio</h1>
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search..." oninput="filterAudio()" />
+            <button id="mode-toggle">Toggle Dark Mode</button>
+        </div>
+        <ul>
+            <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Sermon Title: The Power of Faith</h2>
+        <div class="audio-container">
+            <img src="profile-pic (3).png" alt="Sermon Image" class="sermon-image" />
+            <audio class="styled-audio" controls>
+                <source src="your-audio-file.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <a href="your-audio-file.mp3" class="download-button" download>
+                <i class="fas fa-download"></i> Download Audio
+            </a>
+        </div>
+
+        <!-- List of audio items -->
+        <div class="audio-list" id="audio-list">
+            <div class="audio-item" data-title="The Power of Faith">
+                <h3>The Power of Faith</h3>
+                <audio controls>
+                    <source src="your-audio-file.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <a href="your-audio-file.mp3" class="download-button" download>
+                    <i class="fas fa-download"></i> Download
+                </a>
+            </div>
+            <div class="audio-item" data-title="Finding Peace">
+                <h3>Finding Peace</h3>
+                <audio controls>
+                    <source src="another-audio-file.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <a href="another-audio-file.mp3" class="download-button" download>
+                    <i class="fas fa-download"></i> Download
+                </a>
+            </div>
+            <!-- Add more audio items as needed -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="icons">
+            <a href="#testimony"><i class="fas fa-comments"></i><span>Testimony</span></a>
+            <a href="#scripture"><i class="fas fa-book"></i><span>Search Scripture</span></a>
+            <a href="#choir"><i class="fas fa-music"></i><span>Choir Ministration</span></a>
+            <a href="#bible-reading"><i class="fas fa-bible"></i><span>Bible Reading</span></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
